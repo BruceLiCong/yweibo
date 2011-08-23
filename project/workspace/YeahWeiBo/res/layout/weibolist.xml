@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_height="match_parent" android:orientation="vertical" android:layout_width="match_parent" android:id="@+id/layout_main">
+        <LinearLayout android:id="@+id/layout_control" android:layout_height="wrap_content" android:layout_width="wrap_content">
+            <Button android:text="@string/home" android:id="@+id/button_left" android:layout_height="match_parent" android:layout_width="wrap_content"></Button>
+            <Button android:text="@string/weibo" android:id="@+id/button_recently" android:layout_height="match_parent" android:layout_width="wrap_content"></Button>
+            <Button android:text="@string/friends" android:id="@+id/button_subject" android:layout_height="match_parent" android:layout_width="wrap_content"></Button>
+            <Button android:id="@+id/button_update" android:text="Button" android:layout_height="match_parent" android:layout_width="wrap_content"></Button>
+            <Button android:text="@string/message" android:id="@+id/button_right" android:layout_height="match_parent" android:layout_width="wrap_content"></Button>
+        </LinearLayout>
+        <ViewFlipper android:layout_height="wrap_content" android:id="@+id/flipper_list" android:layout_width="match_parent">
+            <ListView android:layout_width="match_parent" android:id="@+id/listview_weibo" android:layout_height="match_parent"></ListView>
+            <ListView android:layout_width="match_parent" android:id="@+id/listview_friends" android:layout_height="match_parent"></ListView>
+        </ViewFlipper>
+    </LinearLayout>
+    <SlidingDrawer android:content="@+id/content" android:handle="@+id/handle" android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="vertical" android:id="@+id/sliding_important">
+        <Button android:id="@+id/handle" android:text="Handle" android:layout_width="match_parent" android:layout_height="wrap_content"></Button>
+        <LinearLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#ff000000">
+            <ListView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/listview_recently"></ListView>
+        </LinearLayout>
+    </SlidingDrawer>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, YeahWeiBo!</string>
+    <string name="app_name">YeahWeiBo</string>
+    <string name="yeah">Yeah!~</string>
+    <string name="transmit">transmit</string>
+    <string name="comment">comment</string>
+    <string name="collect">collect</string>
+    <string name="separator"> | </string>
+    <string name="weibo">WeiBo</string>
+    <string name="home">Home</string>
+    <string name="friends">Friends</string>
+    <string name="message">Message</string>
+</resources>
